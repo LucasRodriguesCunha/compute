@@ -17,7 +17,11 @@ const loader = document.getElementById("loader");
 loader.classList.add("hidden");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Se o botão start_btn for clicado
+=======
+// Se o botão startQuiz for clicado
+>>>>>>> 11bc70c397c968bfa5c90f96dafd469d1b8b4da6
 =======
 // Se o botão startQuiz for clicado
 >>>>>>> 11bc70c397c968bfa5c90f96dafd469d1b8b4da6
@@ -26,7 +30,11 @@ start_btn.onclick = () => {
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Se o botão exit_btn for clicado
+=======
+// Se o botão exitQuiz for clicado
+>>>>>>> 11bc70c397c968bfa5c90f96dafd469d1b8b4da6
 =======
 // Se o botão exitQuiz for clicado
 >>>>>>> 11bc70c397c968bfa5c90f96dafd469d1b8b4da6
@@ -35,7 +43,11 @@ exit_btn.onclick = () => {
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Se o botão continue_btn for clicado
+=======
+// Se o botão continueQuiz for clicado
+>>>>>>> 11bc70c397c968bfa5c90f96dafd469d1b8b4da6
 =======
 // Se o botão continueQuiz for clicado
 >>>>>>> 11bc70c397c968bfa5c90f96dafd469d1b8b4da6
@@ -70,7 +82,11 @@ const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Se o botão restart_quiz for clicado
+=======
+// Se o botão restartQuiz for clicado
+>>>>>>> 11bc70c397c968bfa5c90f96dafd469d1b8b4da6
 =======
 // Se o botão restartQuiz for clicado
 >>>>>>> 11bc70c397c968bfa5c90f96dafd469d1b8b4da6
