@@ -1,4 +1,4 @@
-//selecting all required elements
+// Selecionando todos os elementos necessários
 const start_btn_home = document.querySelector(".start_btn");
 const start_btn = document.querySelector(".start_btn #button_play");
 const info_box = document.querySelector(".info_box");
@@ -16,20 +16,20 @@ const timeCount = document.querySelector(".timer .timer_sec");
 const loader = document.getElementById("loader");
 loader.classList.add("hidden");
 
-// if startQuiz button clicked
+// Se o botão startQuiz for clicado
 start_btn.onclick = () => {
-  info_box.classList.add("activeInfo"); //show info box
+  info_box.classList.add("activeInfo"); // Mostra a caixa de informações
 };
 
-// if exitQuiz button clicked
+// Se o botão exitQuiz for clicado
 exit_btn.onclick = () => {
-  info_box.classList.remove("activeInfo"); //hide info box
+  info_box.classList.remove("activeInfo"); // Oculta a caixa de informações
 };
 
-// if continueQuiz button clicked
+// Se o botão continueQuiz for clicado
 continue_btn.onclick = () => {
   
-  info_box.classList.remove("activeInfo"); //hide info box
+  info_box.classList.remove("activeInfo"); // Oculta a caixa de informações
   start_btn_home.classList.add("hidden");
 
   loader.classList.remove("hidden");
@@ -38,10 +38,10 @@ continue_btn.onclick = () => {
   function startQuiz() {    
     loader.classList.add("hidden");
     start_btn_home.classList.remove("hidden");
-    quiz_box.classList.add("activeQuiz"); //show quiz box
-    showQuetions(0); //calling showQestions function
-    queCounter(1); //passing 1 parameter to queCounter
-    startTimer(15); //calling startTimer function
+    quiz_box.classList.add("activeQuiz"); // Mostra a caixa de perguntas
+    showQuetions(0); // Chamando a função showQestions
+    queCounter(1); // Passando 1 parâmetro para queCounter
+    startTimer(15); // Chamando a função startTimer
     startTimerLine(0);
   }
 };
@@ -57,7 +57,7 @@ let widthValue = 0;
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 
-// if restartQuiz button clicked
+// Se o botão restartQuiz for clicado
 restart_quiz.onclick = () => {
   localStorage.setItem("mostRecentScore", userScore); /*go to the end page*/
   return window.location.assign("./src/pages/end.html");
