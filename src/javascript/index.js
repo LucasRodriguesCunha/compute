@@ -1,4 +1,4 @@
-// selecting all required elements
+// Selecionando todos os elementos necessários
 const start_btn_home = document.querySelector(".start_btn");
 const start_btn = document.querySelector(".start_btn #button_play");
 const info_box = document.querySelector(".info_box");
@@ -16,20 +16,20 @@ const timeCount = document.querySelector(".timer .timer_sec");
 const loader = document.getElementById("loader");
 loader.classList.add("hidden");
 
-// if startQuiz button clicked
+// Se o botão start_btn for clicado
 start_btn.onclick = () => {
-  info_box.classList.add("activeInfo"); //show info box
+  info_box.classList.add("activeInfo"); // Mostra a caixa de informações
 };
 
-// if exitQuiz button clicked
+// Se o botão exit_btn for clicado
 exit_btn.onclick = () => {
-  info_box.classList.remove("activeInfo"); //hide info box
+  info_box.classList.remove("activeInfo"); // Oculta a caixa de informações
 };
 
-// if continueQuiz button clicked
+// Se o botão continue_btn for clicado
 continue_btn.onclick = () => {
 
-  info_box.classList.remove("activeInfo"); //hide info box
+  info_box.classList.remove("activeInfo"); // Oculta a caixa de informações
   start_btn_home.classList.add("hidden");
 
   loader.classList.remove("hidden");
@@ -38,10 +38,10 @@ continue_btn.onclick = () => {
   function startQuiz() {
     loader.classList.add("hidden");
     start_btn_home.classList.remove("hidden");
-    quiz_box.classList.add("activeQuiz"); //show quiz box
-    showQuetions(0); //calling showQestions function
-    queCounter(1); //passing 1 parameter to queCounter
-    startTimer(20); //calling startTimer function
+    quiz_box.classList.add("activeQuiz"); // Mostra a caixa de perguntas
+    showQuetions(0); // Chamando a função showQestions
+    queCounter(1); // Passando 1 parâmetro para queCounter
+    startTimer(20); // Chamando a função startTimer
     startTimerLine(0);
   }
 };
@@ -57,38 +57,38 @@ let widthValue = 0;
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 
-// if restartQuiz button clicked
+// Se o botão restart_quiz for clicado
 restart_quiz.onclick = () => {
-  localStorage.setItem("mostRecentScore", userScore); /*go to the end page*/
+  localStorage.setItem("mostRecentScore", userScore); /*ir para a página final*/
   return window.location.assign("./src/pages/end.html");
 };
 
-// if quitQuiz button clicked
+// Se o botão quit_quiz for clicado
 quit_quiz.onclick = () => {
-  window.location.reload(); //reload the current window
+  window.location.reload(); // Recarrega a janela atual
 };
 
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_ques_counter = document.querySelector("footer .total_que");
 
-// if Next Que button clicked
+// Se o botão next_btn foi clicado
 next_btn.onclick = () => {
   if (que_count < questions.length - 1) {
-    //if question count is less than total question length
-    que_count++; //increment the que_count value
-    que_numb++; //increment the que_numb value
-    showQuetions(que_count); //calling showQestions function
-    queCounter(que_numb); //passing que_numb value to queCounter
-    clearInterval(counter); //clear counter
+    // Se a contagem de perguntas for menor que o tamanho total das perguntas
+    que_count++; // Incrementa o valor que_count
+    que_numb++; // Incrementa o valor que_numb
+    showQuetions(que_count); // Chamando a função showQestions
+    queCounter(que_numb); // Passando valor que_numb para queCounter
+    clearInterval(counter); // Limpa o contador
     clearInterval(counterLine); //clear counterLine
-    startTimer(timeValue); //calling startTimer function
-    startTimerLine(widthValue); //calling startTimerLine function
-    timeText.textContent = "Tempo restante"; //change the timeText to Time Left
-    next_btn.classList.remove("show"); //hide the next button
+    startTimer(timeValue); // Limpa counterLine
+    startTimerLine(widthValue); // Chamando a função startTimerLine
+    timeText.textContent = "Tempo restante"; // Muda o timeText para Time Left
+    next_btn.classList.remove("show"); // Esconde o próximo botão
   } else {
-    clearInterval(counter); //clear counter
-    clearInterval(counterLine); //clear counterLine
-    showResult(); //calling showResult function
+    clearInterval(counter); // Limpa o contador
+    clearInterval(counterLine); // limpa counterLine
+    showResult(); // Chamando a função showResult
   }
 };
 
