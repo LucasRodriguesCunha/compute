@@ -1,4 +1,4 @@
-// Selecionando todos os elementos necessários
+// selecting all required elements
 const start_btn_home = document.querySelector(".start_btn");
 const start_btn = document.querySelector(".start_btn #button_play");
 const info_box = document.querySelector(".info_box");
@@ -16,61 +16,37 @@ const timeCount = document.querySelector(".timer .timer_sec");
 const loader = document.getElementById("loader");
 loader.classList.add("hidden");
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-// Se o botão start_btn for clicado
-=======
-// Se o botão startQuiz for clicado
->>>>>>> 11bc70c397c968bfa5c90f96dafd469d1b8b4da6
-=======
-// Se o botão startQuiz for clicado
->>>>>>> 11bc70c397c968bfa5c90f96dafd469d1b8b4da6
+// if startQuiz button clicked
 start_btn.onclick = () => {
-  info_box.classList.add("activeInfo"); // Mostra a caixa de informações
+  info_box.classList.add("activeInfo"); //show info box
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-// Se o botão exit_btn for clicado
-=======
-// Se o botão exitQuiz for clicado
->>>>>>> 11bc70c397c968bfa5c90f96dafd469d1b8b4da6
-=======
-// Se o botão exitQuiz for clicado
->>>>>>> 11bc70c397c968bfa5c90f96dafd469d1b8b4da6
+// if exitQuiz button clicked
 exit_btn.onclick = () => {
-  info_box.classList.remove("activeInfo"); // Oculta a caixa de informações
+  info_box.classList.remove("activeInfo"); //hide info box
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-// Se o botão continue_btn for clicado
-=======
-// Se o botão continueQuiz for clicado
->>>>>>> 11bc70c397c968bfa5c90f96dafd469d1b8b4da6
-=======
-// Se o botão continueQuiz for clicado
->>>>>>> 11bc70c397c968bfa5c90f96dafd469d1b8b4da6
+// if continueQuiz button clicked
 continue_btn.onclick = () => {
-  
-  info_box.classList.remove("activeInfo"); // Oculta a caixa de informações
+
+  info_box.classList.remove("activeInfo"); //hide info box
   start_btn_home.classList.add("hidden");
 
   loader.classList.remove("hidden");
   const myTimeout = setTimeout(startQuiz, 3000);
 
-  function startQuiz() {    
+  function startQuiz() {
     loader.classList.add("hidden");
     start_btn_home.classList.remove("hidden");
-    quiz_box.classList.add("activeQuiz"); // Mostra a caixa de perguntas
-    showQuetions(0); // Chamando a função showQestions
-    queCounter(1); // Passando 1 parâmetro para queCounter
-    startTimer(15); // Chamando a função startTimer
+    quiz_box.classList.add("activeQuiz"); //show quiz box
+    showQuetions(0); //calling showQestions function
+    queCounter(1); //passing 1 parameter to queCounter
+    startTimer(20); //calling startTimer function
     startTimerLine(0);
   }
 };
 
-let timeValue = 15;
+let timeValue = 20;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -81,41 +57,33 @@ let widthValue = 0;
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-// Se o botão restart_quiz for clicado
-=======
-// Se o botão restartQuiz for clicado
->>>>>>> 11bc70c397c968bfa5c90f96dafd469d1b8b4da6
-=======
-// Se o botão restartQuiz for clicado
->>>>>>> 11bc70c397c968bfa5c90f96dafd469d1b8b4da6
+// if restartQuiz button clicked
 restart_quiz.onclick = () => {
   localStorage.setItem("mostRecentScore", userScore); /*go to the end page*/
   return window.location.assign("./src/pages/end.html");
 };
 
-// Se o botão quit_quiz for clicado
+// if quitQuiz button clicked
 quit_quiz.onclick = () => {
-  window.location.reload(); // Recarrega a janela atual
+  window.location.reload(); //reload the current window
 };
 
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_ques_counter = document.querySelector("footer .total_que");
 
-// Se o botão next_btn foi clicado
+// if Next Que button clicked
 next_btn.onclick = () => {
   if (que_count < questions.length - 1) {
-    // Se a contagem de perguntas for menor que o tamanho total das perguntas
-    que_count++; // Incrementa o valor que_count
-    que_numb++; // Incrementa o valor que_numb
-    showQuetions(que_count); // Chamando a função showQestions
-    queCounter(que_numb); // Passando valor que_numb para queCounter
+    //if question count is less than total question length
+    que_count++; //increment the que_count value
+    que_numb++; //increment the que_numb value
+    showQuetions(que_count); //calling showQestions function
+    queCounter(que_numb); //passing que_numb value to queCounter
     clearInterval(counter); //clear counter
     clearInterval(counterLine); //clear counterLine
     startTimer(timeValue); //calling startTimer function
     startTimerLine(widthValue); //calling startTimerLine function
-    timeText.textContent = "Tempo Restante"; //change the timeText to Time Left
+    timeText.textContent = "Tempo restante"; //change the timeText to Time Left
     next_btn.classList.remove("show"); //hide the next button
   } else {
     clearInterval(counter); //clear counter
@@ -175,12 +143,12 @@ function optionSelected(answer) {
     scoreTextPoint.innerHTML = userScore * 10;
     answer.classList.add("correct"); //adding green color to correct selected option
     answer.insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to correct selected option
-    console.log("Correct Answer");
-    console.log("Your correct answers = " + userScore);
+    console.log("Resposta correta");
+    console.log("Suas respostas corretas = " + userScore);
   } else {
     answer.classList.add("incorrect"); //adding red color to correct selected option
     answer.insertAdjacentHTML("beforeend", crossIconTag); //adding cross icon to correct selected option
-    console.log("Wrong Answer");
+    console.log("Resposta errada");
 
     for (i = 0; i < allOptions; i++) {
       if (option_list.children[i].textContent == correcAns) {
