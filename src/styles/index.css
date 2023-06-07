@@ -20,7 +20,7 @@
 }
 
 /* Home - index.html */
- 
+
 
 .start_btn,
 .info_box,
@@ -351,7 +351,7 @@ footer .total_que span p {
 
 footer .total_que span p:first-child {
     padding-left: 0px;
-} 
+}
 
 footer .hud-item {
     display: inline-block;
@@ -474,7 +474,7 @@ footer button.show {
 
 /* end - high Scores */
 
-#page-home{
+#page-home {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -504,4 +504,116 @@ footer button.show {
 
 .hidden {
     display: none;
-} 
+}
+
+/* Estilos para telas pequenas */
+
+/* Até 767px */
+@media (max-width: 767px) {
+
+    /* Coloque os estilos para telas pequenas aqui */
+    @media (max-width: 767px) {
+        :root {
+            font-size: 50%;
+        }
+
+        .start_btn,
+        .info_box,
+        .quiz_box,
+        .result_box {
+            width: 90%;
+        }
+
+        .start_btn button,
+        .start_btn #button_score {
+            width: 100%;
+        }
+
+        .info_box,
+        .quiz_box,
+        .result_box {
+            transform: translate(-50%, -50%) scale(0.8);
+        }
+
+        .quiz_box,
+        .result_box {
+            width: 90%;
+        }
+
+        section .que_text {
+            font-size: 20px;
+        }
+
+        section .option_list .option {
+            font-size: 15px;
+        }
+
+        .quiz_box header .title {
+            font-size: 18px;
+        }
+
+        .quiz_box header .timer {
+            height: 35px;
+            padding: 0 5px;
+        }
+
+        .quiz_box header .timer .time_left_txt {
+            font-size: 15px;
+        }
+
+        .quiz_box header .timer .timer_sec {
+            font-size: 14px;
+            height: 25px;
+            width: 35px;
+            line-height: 25px;
+        }
+
+        footer .total_que span p {
+            font-size: 15px;
+        }
+
+        footer button {
+            height: 35px;
+            padding: 0 10px;
+            font-size: 15px;
+        }
+
+        .result_box {
+            width: 90%;
+        }
+
+        .result_box .icon {
+            font-size: 70px;
+        }
+
+        .result_box .complete_text {
+            font-size: 18px;
+        }
+
+        .result_box .score_text span {
+            font-size: 16px;
+        }
+
+        .result_box .buttons button {
+            margin: 0 5px;
+            height: 40px;
+            padding: 0 15px;
+            font-size: 16px;
+        }
+    }
+}
+
+/* De 768px até 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Coloque os estilos para telas pequenas (tablets, por exemplo) aqui */
+}
+
+/* De 992px até 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Coloque os estilos para telas pequenas (tablets maiores, por exemplo) aqui */
+}
+
+/* A partir de 1200px */
+@media (min-width: 1200px) {
+    /* Coloque os estilos para telas pequenas (desktops menores, por exemplo) aqui */
+}
