@@ -57,12 +57,6 @@ let widthValue = 0;
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 
-// Se o botão restart_quiz for clicado
-restart_quiz.onclick = () => {
-  localStorage.setItem("mostRecentScore", userScore); /*ir para a página final*/
-  return window.location.assign("./src/pages/end.html");
-};
-
 // Se o botão quit_quiz for clicado
 quit_quiz.onclick = () => {
   window.location.reload(); // Recarrega a janela atual
