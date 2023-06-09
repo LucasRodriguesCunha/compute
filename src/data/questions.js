@@ -330,6 +330,72 @@ let questions = [
       "var myObject = object();",
       "var myObject = [];"
     ]
+  },
+  {
+    numb: 31,
+    question: "Qual propriedade do CSS é usada para definir a cor de fundo de um elemento?",
+    answer: "background-color",
+    option: [
+      "background-color",
+      "color",
+      "font-size",
+      "text-align"
+    ]
+  },
+  {
+    numb: 32,
+    question: "Qual propriedade CSS é usada para definir a cor do texto?",
+    answer: "color",
+    options: [
+      "background-color",
+      "color",
+      "font-family",
+      "text-decoration"
+    ]
+  },
+  {
+    numb: 33,
+    question: "Qual é o operador em C usado para acessar o valor de uma variável através do seu endereço?",
+    answer: "ponteiro (*)",
+    options: [
+      "incremento (++)",
+      "atribuição (=)",
+      "ponteiro (*)",
+      "comparação (==)"
+    ]
+  },
+  {
+    numb: 34,
+    question: "Qual é o tipo de dado em C usado para armazenar números inteiros sem sinal?",
+    answer: "unsigned int",
+    options: [
+      "float",
+      "int",
+      "unsigned int",
+      "char"
+    ]
+  },
+  {
+    numb: 35,
+    question: "Qual é o método em JavaScript usado para adicionar um elemento no final de um array?",
+    answer: "push",
+    options: [
+      "concat",
+      "append",
+      "add",
+      "push"
+    ]
+  },
+  {
+    numb: 36,
+    question: "Qual é o método em JavaScript usado para transformar uma string em letras maiúsculas?",
+    answer: "toUpperCase",
+    options: [
+      "toLowerCase",
+      "toUpperCase",
+      "convertCase",
+      "caseChange"
+    ]
   }
 
 ];
