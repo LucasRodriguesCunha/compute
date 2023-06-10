@@ -1,4 +1,4 @@
-// Criando um array e passando o número, perguntas, opções e respostas.
+// Criando um array e passando o número, pergunta, opção e resposta.
 
 let questions = [
   {
