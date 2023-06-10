@@ -396,6 +396,17 @@ let questions = [
       "convertCase",
       "caseChange"
     ]
-  }
+  },
+  {
+    numb: 37,
+    question: "Qual tag dessas tags não é necessária para a criação de um projeto web?",
+    answer: "h1",
+    options: [
+      "body",
+      "h1",
+      "head",
+      "html"
+    ]
+  },
 
 ];
