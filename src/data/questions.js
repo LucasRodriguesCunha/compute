@@ -335,7 +335,7 @@ let questions = [
     numb: 31,
     question: "Qual propriedade do CSS é usada para definir a cor de fundo de um elemento?",
     answer: "background-color",
-    option: [
+    options: [
       "background-color",
       "color",
       "font-size",
