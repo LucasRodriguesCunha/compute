@@ -408,5 +408,60 @@ let questions = [
       "html"
     ]
   },
+  {
+    numb: 38,
+    question: "Qual a regra que adiciona flexbox a um elemento?",
+    answer: "display",
+    options: [
+      "flex",
+      "display",
+      "set",
+      "box"
+    ]
+  },
+  {
+    numb: 39,
+    question: "Qual a regra que adiciona flexbox a um elemento?",
+    answer: "display",
+    options: [
+      "flex",
+      "display",
+      "set",
+      "box"
+    ]
+  },
+  {
+    numb: 39,
+    question: "O que a propriedade grow faz?",
+    answer: "Representa a proporção de um elemento no flex",
+    options: [
+      "Representa a proporção de um elemento no flex",
+      "Diminui um elemento em flex",
+      "Altera apenas a altura de um elemento",
+      "Limita o crescimento de um elemento"
+    ]
+  },
+  {
+    numb: 40,
+    question: "Sobre as propriedades do flex é correto afirmar que:",
+    answer: "grow, shrink e basis podem ser utilizadas juntas",
+    options: [
+      "grow, shrink e basis não podem ser utilizadas juntas",
+      "grow, shrik e basis podem ser utilizadas juntas",
+      "shrink e grow são opostos, ou seja, uma anula a outra",
+      "basis é utilizado apena junto de grow"
+    ]
+  },
+  {
+    numb: 40,
+    question: "Sobre estrutura de pastas de um projeto, por que os arquivos são separados em pastas?",
+    answer: "grow, shrink e basic podem ser utilizadas juntas",
+    options: [
+      "Apenas por organização",
+      "Separação de responsabilidade e organização",
+      "Separação de responsabilidade e facilidade de manutenção",
+      "Separação de responsabilidade, organização e facilidade de manutenção"
+    ]
+  },
 
 ];
