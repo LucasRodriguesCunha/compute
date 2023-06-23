@@ -455,7 +455,7 @@ let questions = [
   {
     numb: 42,
     question: "Sobre estrutura de pastas de um projeto, por que os arquivos são separados em pastas?",
-    answer: "Separação de responsabilidade, organização e facilidade de manutençã",
+    answer: "Separação de responsabilidade, organização e facilidade de manutenção",
     options: [
       "Apenas por organização",
       "Separação de responsabilidade e organização",
@@ -463,5 +463,206 @@ let questions = [
       "Separação de responsabilidade, organização e facilidade de manutenção"
     ]
   },
+{
+  numb: 43,
+  question: "Qual função em JavaScript é usada para arredondar um número para o inteiro mais próximo?",
+  answer: "round()",
+  options: [
+    "floor()",
+    "ceil()",
+    "parseInt()",
+    "round()"
+  ]
+},
+{
+  numb: 44,
+  question: "Qual propriedade CSS é usada para definir a largura de uma borda?",
+  answer: "border-width",
+  options: [
+    "border-color",
+    "border-width",
+    "border-style",
+    "border-radius"
+  ]
+},
+{
+  numb: 45,
+  question: "Qual propriedade CSS é usada para definir a largura de uma borda?",
+  answer: "border-width",
+  options: [
+    "border-color",
+    "border-width",
+    "border-style",
+    "border-radius"
+  ]
+},
+{
+  numb: 46,
+  question: "Qual estrutura de controle é usada na linguagem C para executar um bloco de código repetidamente enquanto uma condição for verdadeira?",
+  answer: "while",
+  options: [
+    "if-else",
+    "switch",
+    "for",
+    "while"
+  ]
+},
+{
+  numb: 47,
+  question: "Qual palavra-chave é usada em JavaScript para sair de um loop imediatamente?",
+  answer: "break",
+  options: [
+    "exit",
+    "break",
+    "return",
+    "continue"
+  ]
+},
+{
+  numb: 48,
+  question: "Qual é o tipo de dado utilizado em C para armazenar caracteres individuais?",
+  answer: "char",
+  options: [
+    "int",
+    "float",
+    "char",
+    "string"
+  ]
+},
+{
+  numb: 49,
+  question: "Qual é a função utilizada para ler uma entrada do usuário em C?",
+  answer: "scanf()",
+  options: [
+    "input()",
+    "scan()",
+    "get()",
+    "scanf()"
+  ]
+},
+{
+  numb: 50,
+  question: "Qual é a estrutura de controle utilizada para executar um bloco de código pelo menos uma vez em C?",
+  answer: "do-while",
+  options: [
+    "do-while",
+    "switch",
+    "for",
+    "if-else"
+  ]
+},
+{
+  numb: 51,
+  question: "Qual é a função utilizada para calcular a raiz quadrada de um número em C?",
+  answer: "sqrt()",
+  options: [
+    "pow()",
+    "root()",
+    "sqr()",
+    "sqrt()"
+  ]
+},
+{
+  numb: 52,
+  question: "Qual é a função utilizada para ler uma string do usuário em C?",
+  answer: "gets()",
+  options: [
+    "get()",
+    "scanf()",
+    "read()",
+    "sqrt()"
+  ]
+},
+{
+  numb: 53,
+  question: "Qual é o tipo de dado utilizado em C para representar números de ponto flutuante de precisão dupla?",
+  answer: "double",
+  options: [
+    "int",
+    "float",
+    "double",
+    "char"
+  ]
+},
+{
+  numb: 54,
+  question: "Qual é a palavra-chave utilizada para definir uma constante em C?",
+  answer: "const",
+  options: [
+    "read",
+    "const",
+    "var",
+    "char"
+  ]
+},
+{
+  numb: 55,
+  question: "Qual é a estrutura de controle utilizada para selecionar entre várias opções em C?",
+  answer: "switch",
+  options: [
+    "while",
+    "if-else",
+    "for",
+    "switch"
+  ]
+},
+{
+  numb: 56,
+  question: "Qual é a função utilizada para comparar duas strings em C?",
+  answer: "strcmp()",
+  options: [
+    "equals()",
+    "strcomp()",
+    "strcmp()",
+    "compare()"
+  ]
+},
+{
+  numb: 57,
+  question: "Qual é a função utilizada para calcular o valor absoluto de um número inteiro em C?",
+  answer: "abs()",
+  options: [
+    "fabs()",
+    "abs()",
+    "absolute()",
+    "value()"
+  ]
+},
+{
+  numb: 58,
+  question: "Qual é a função utilizada para obter o valor máximo entre dois números em C?",
+  answer: "max()",
+  options: [
+    "max()",
+    "maximum()",
+    "greater()",
+    "fmax()"
+  ]
+},
+{
+  numb: 59,
+  question: "Qual é o tamanho em bytes do tipo float em C?",
+  answer: "4",
+  options: [
+    "2",
+    "4",
+    "8",
+    "Depende do compilador"
+  ]
+},
+{
+  numb: 60,
+  question: "Qual é a função usada para fechar um arquivo em C?",
+  answer: "fclose()",
+  options: [
+    "fclose()",
+    "close()",
+    "fileclose()",
+    "endfile()"
+  ]
+},
+
+
+
 
 ];
