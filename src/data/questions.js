@@ -431,7 +431,7 @@ let questions = [
     ]
   },
   {
-    numb: 39,
+    numb: 40,
     question: "O que a propriedade grow faz?",
     answer: "Representa a proporção de um elemento no flex",
     options: [
@@ -442,7 +442,7 @@ let questions = [
     ]
   },
   {
-    numb: 40,
+    numb: 41,
     question: "Sobre as propriedades do flex é correto afirmar que:",
     answer: "grow, shrink e basis podem ser utilizadas juntas",
     options: [
@@ -453,9 +453,9 @@ let questions = [
     ]
   },
   {
-    numb: 40,
+    numb: 42,
     question: "Sobre estrutura de pastas de um projeto, por que os arquivos são separados em pastas?",
-    answer: "grow, shrink e basic podem ser utilizadas juntas",
+    answer: "Separação de responsabilidade, organização e facilidade de manutençã",
     options: [
       "Apenas por organização",
       "Separação de responsabilidade e organização",
