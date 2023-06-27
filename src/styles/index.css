@@ -526,7 +526,7 @@ footer button.show {
 
         .start_btn button,
         .start_btn #button_score {
-            width: 100%;
+            width: 70%;
         }
 
         .info_box,
@@ -537,7 +537,7 @@ footer button.show {
 
         .quiz_box,
         .result_box {
-            width: 90%;
+            width: 70%;
         }
 
         section .que_text {

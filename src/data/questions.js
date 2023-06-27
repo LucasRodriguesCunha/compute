@@ -661,8 +661,4 @@ let questions = [
       "endfile()"
     ]
   },
-
-
-
-
 ];
